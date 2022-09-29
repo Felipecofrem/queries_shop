@@ -1,0 +1,162 @@
+#page {
+  text-align: center;
+  width:100%;
+}
+.grid-container-feat {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  box-shadow: gray 0px 0px 4px 0px;
+}
+
+#page > aside {
+  grid-area: menu-a;
+  background-color: rgb(1, 87, 155);
+  color: white; 
+}
+#page > nav {
+ grid-area: filter-a;
+ background-color: rgb(226, 226, 226);
+}
+#page > main {
+  grid-area: main-a;
+}
+#page > footer {
+  grid-area: foot-a;
+  background-color: rgb(0, 47, 108);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}   
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link-page {
+  color: blue;
+  text-decoration: none;
+}
+
+.flex-aside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+table {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.page {
+  border: 1px solid gainsboro;
+  padding: 0.5rem;
+  width: 2.5rem;
+}
+
+nav {
+  padding: 0.5rem;
+}
+
+aside {
+  padding: 1rem;
+}
+
+.flex-links {
+  display: none;
+}
+
+.flex-aside {
+  display: flex;
+  justify-content:space-between;
+}
+
+  @media (min-width:576px)
+  {
+    #page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "menu-a menu-a"
+                        "filter-a main-a"
+                        "foot-a foot-a"; 
+    grid-template-columns: 200px 1fr;
+}
+.grid-container-feat {
+  grid-template-columns: 1fr 1fr;
+}
+.flex-links {
+  display: flex;
+  flex-direction:  row;
+}
+
+.cont-menu {
+  padding-left: 1rem;
+}
+
+.link { 
+  padding: 1rem;
+}
+.flex-aside {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 1rem;
+}
+.fa-bars {
+  display: none;
+
+}
+
+
+  }
+
+  @media (min-width:992px)
+  {
+    #page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "menu-a filter-a"
+                        "menu-a main-a"
+                        "foot-a main-a";
+    grid-template-columns: 200px 1fr;
+}
+.grid-container-feat {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.flex-links {
+  display: flex;
+  flex-direction: column;
+}
+.flex-aside {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: flex-start;
+}
+
+.fa-solid {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+.fa-bars {
+  display: none;
+}
+
+  }
+
+  .img-fluid {
+    padding: 1rem;
+  }
+
+  .btn {
+    margin-bottom: 1rem;
+  }
+
+
+
